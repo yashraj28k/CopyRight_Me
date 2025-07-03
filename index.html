@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="nav-logo border"> 
+        <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-sec">India</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+            <option value="search-alias=alexa-skills">Alexa Skills</option> slot
+
+            <option value="search-alias-amazon-devices">Amazon Devices</option>slot
+
+            <option value="search-alias-fashion">Amazon Fashion</option> slot
+
+            <option value="search-alias=nowstore">Amazon Fresh</option> slot
+
+            <option value="search-alias-freshmeat">Amazon Fresh Meat</option> slot
+
+            <option value="search-alias-amazon-pharmacy">Amazon Pharmacy</option> slot
+
+            <option value="search-alias-appliances">Appliances</option> slot
+
+            <option value="search-alias-mobile-apps">Apps & Games</option> slot
+
+            <option value="search-alias-audible">Audible Audiobooks</option> slot
+
+            <option value="search-alias-baby">Baby</option> slot
+
+            <option value="search-alias-beauty">Beauty</option> slot
+
+            <option value="search-alias=stripbooks">Books</option> slot
+
+            <option value="search-alias-automotive">Car & Motorbike</option> slot
+
+            <option value="search-alias=apparel">Clothing & Accessories</option>slot
+
+            <option value="search-alias-collectibles">Collectibles</option> slot
+
+            <option value="search-alias-computer's">Computers & Accessories</option> slot
+
+            <option value="search-alias-todays-deals">Deals</option>slot
+
+            <option value="search-alias electronics">Electronics</option> slot
+
+            <option value="search-alias-furniture">Furniture</option> slot
+
+            <option value="search-alias-lawngarden">Garden & Outdoors</option> slot
+
+            <option value="search-alias-gift-cards">Gift Cards</option> slot
+
+            <option value="search-alias-grocery">Grocery & Gourmet Foods</option> slot
+
+            <option value="search-alias-hpc">Health & Personal Care</option>slat 
+
+            <option value="search-alias-kitchen">Home & Kitchen</option> slot
+
+            <option value="search-alias-industrial">Industrial & Scientific</option> slot
+
+            <option value="search-alias-jewelry">Jewellery</option> slot
+
+            <option value="search-alias-digital-text">Kindle Store</option> slot
+
+            <option value="search-alias-luggage">Luggage & Bags</option>slot
+
+            <option value="search-alias-luxury-beauty">Luxury Beauty</option> slot
+
+            <option value="search-alias-dvd">Movies & TV Shows</option> slot
+
+            <option value="search-alias-digital-music">MP3 Music</option> slot
+
+            <option value="search-alias-popular">Music</option> slot
+
+            <option value="search-alias-mi">Musical Instruments</option> slot
+
+            <option value="search-alias-office-products">Office Products</option> slot
+
+            <option value="search-alias-pets">Pet Supplies</option> slot
+
+            <option value="search-alias-instant-video">Prime Video</option> slot
+
+            <option value="search-alias-shoes">Shoes & Handbags</option> slot
+
+            <option value="search-alias-software">Software</option> slot
+
+            <option value="search-alias-sporting">Sports, Fitness & Outdoors</option> slot
+
+            <option value="search-alias-specialty-aps-sns">Subscribe & Save</option> slot
+
+            <option value="search-alias-home-improvement">Tools & Home Improvement</option>slot
+
+            <option value="search-alias-toys">Toys & Games</option>slot
+
+            <option value="search-alias-under-ten-dollars">Under 500</option>slot
+
+            <option value="search-alias-videogames">Video Games</option> slot
+
+            <option value="search-alias-watches">Watches</option> slot
+          </select>  
+          <input placeholder="Search Amazon" class="search-input">
+          <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+        <div class="nav-signin border">
+        <p><span>Hello, sign in</span></p>
+        <p class="nav-second">Account & Lists</p>
+        </div>
+        <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">& Orders</p>
+            </div>
+        
+        <div class="nav-cart border" id="Cards">
+            <i class="fa-solid fa-cart-shopping"></i>  
+            Cart
+        </div>
+    </div>
+        
+        <div class="panel">
+            <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+           <p>Today's Deals</p>
+           <p>Customer Service</p> 
+           <p>Registry</p>
+           <p>Gift Cards</p>
+           <p>Sell</p>
+        </div>
+
+        <div class="panel-deals border">
+            Shop deals in Electronics
+        </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="carousel">
+            <button class="carousel-btn left" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-images">
+            <img src="hero_image.jpg" alt="Slide 1" class="active">
+            <img src="hero_image1.png" alt="Slide 2">
+            <img src="hero2img.jpg" alt="Slide 3">
+            <img src="hero3img.jpg" alt="Slide 4">
+            <img src="hero4img.jpg" alt="Slide 5">
+            <img src="hero_image2.jpeg" alt="Slide 6">
+            </div>
+            <button class="carousel-btn right" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="hero-msg">
+        <p>You are now on amazon.com. you can also shop on Amazon India for millions of products with fast local delivery.<a>click here to go</a></p>
+        </div>
+        </div>
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-images img');
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // Show the first slide by default
+            showSlide(currentSlide);
+            </script>
+
+
+        <div class="shop-section">
+            <div class="box1 box">
+                <div class="box-content">
+                <h3>Health & Personal Care</h3>
+                <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                <p>See More</p>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="box-content">
+                    <h3>Beauty Electronic Products</h3>
+                    <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                    <p>See More</p>
+                    </div>  
+            </div>
+            <div class="box3 box">
+                <div class="box-content">
+                    <h3>New Smartphone</h3>
+                    <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                    <p>See More</p>
+                    </div>
+            </div>
+            <div class="box4 box">
+                <div class="box-content">
+                    <h3>Pets</h3>
+                    <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                    <p>See More</p>
+                    </div>
+            </div>
+    
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+            <h3>Home Matarials & Apliances</h3>
+            <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Toys & Stationary Items</h3>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <p>See More</p>
+                </div>  
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Cosmatics Products</h3>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <p>See More</p>
+                </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>Womens Wear</h3>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <p>See More</p>
+                </div>
+        </div>
+
+</div>
+
+<footer>
+    <div class="foot-panel1" id="BackToTop">
+        Back to Top
+    </div>
+
+    <div class="foot-panel2">
+        <ul>
+            <p>Get to Know Us</p>
+            <a href="#">About Amazon</a>
+            <a href="#">Careers</a>
+            <a href="#">Press Releases</a>
+            <a href="#">Amazon Science</a>
+        </ul>
+
+        <ul>
+            <p>Connect with Us</p>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </ul>
+
+        <ul>
+            <p>Make Money with Us</p>
+            <a href="#">Sell on Amazon</a>
+            <a href="#">Amazon Global Selling</a>
+            <a href="#">Supply to Amazon</a>
+            <a href="#">Become an Affiliate</a>
+            <a href="#">Fulfilment by Amazon</a>
+            <a href="#">Advertise Your Products</a>
+            <a href="#">Amazon Pay on Merchants</a>
+            <a href="#">Build Your Brand</a>
+        </ul>
+
+        <ul>
+            <p>Let Us Help You</p>
+            <a href="#">Your Account</a>
+            <a href="#">Returns Centre</a>
+            <a href="#">Recalls & Product Safety</a>
+            <a href="#">100% Purchase Protection</a>
+            <a href="#">Amazon App Download</a>
+            <a href="#">Help</a>
+        </ul>
+
+    </div>
+
+    <div class="foot-panel3">
+        <div class="logo2"></div>
+    </div>
+
+    <div class="foot-panel4">
+    <div class="pages">
+        <a>Conditions of Use</a>
+        <a>Privacy Notices</a>
+        <a>Your Ads Privacy Choices</a>
+    </div>
+    <div class="copyright">
+        © 1996-2025, Amazon.com, Inc. or its affiliates
+    </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
